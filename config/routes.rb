@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #get "registrations/new"
+  # get "registrations/new"
   resources :registrations, only: %i[create new]
 
   # get "home/index"
