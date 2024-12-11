@@ -3,7 +3,6 @@ class RegistrationsController < ApplicationController
   def new
   end
 
-  def create 
+  def create
   end
-  
 end
