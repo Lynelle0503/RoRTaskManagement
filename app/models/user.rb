@@ -5,6 +5,6 @@ class User < ApplicationRecord
   validates_presence_of :email_address
   validates_uniqueness_of :email_address
   # validates password
-  validates :password, confirmation: true, presence: true, length: {minimum:3}
+  validates :password, confirmation: true, presence: true, length: { minimum: 3 }
   normalizes :email_address, with: ->(e) { e.strip.downcase }
 end
