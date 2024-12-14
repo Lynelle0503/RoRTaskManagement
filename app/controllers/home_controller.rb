@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
-  allow_unauthenticated_access
+
   def index
+    if !Current.session
+      redirect_to new_session_path
+    end
   end
 end

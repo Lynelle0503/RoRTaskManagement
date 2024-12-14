@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  root "landing_pages#show"
+  get "tasks/index"
   # get "registrations/new"
   resources :registrations, only: %i[create new]
 
   # get "home/index"
-  root "home#index"
 
   resource :session
   resources :passwords, param: :token
@@ -19,4 +20,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  get "home", to: "home#index", as: :home
 end

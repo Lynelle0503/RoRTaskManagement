@@ -1,6 +1,8 @@
 <h2>Create your Account</h2>
 <%= form_with model: @user, url: registrations_path, local: true  do |f| %>
     <%= render "shared/form_errors", model: @user %>
+    <%= f.label :name, "Username : " %>
+    <%= f.text_field :name, required: true, autocomplete: "name", placeholder: "Enter your username", maxlength: 50 %><br>
     <%= f.label :email_address, "Email Address : " %>
     <%= f.email_field :email_address, required: true, autocomplete: "Email Address", placeholder: "Enter your email id", maxlength: 80 %><br>
     <%= f.label :password, "Password : " %>

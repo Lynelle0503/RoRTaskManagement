@@ -1,3 +1,8 @@
 <h2> Welcome to Task Management App</h2>
+<h4>Hello, <%=Current.session.user.name %> </h4>
 <p>Create a new task here</p>
-<%= link_to "Sign out", Current.session, data: {turbo_method: :delete} %>
+<p>OR</p>
+<p>See your registered tasks</p>
+<%# if Current.session %>
+    <%= link_to "Sign out", Current.session, data: {turbo_method: :delete} %>
+<%# end %>
