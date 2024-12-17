@@ -6,6 +6,6 @@ class CreateCategories < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    #add_foreign_key :categories, :users, column: :user
+    # add_foreign_key :categories, :users, column: :user
   end
 end

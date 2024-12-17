@@ -10,7 +10,7 @@ class CreateTasks < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    #add_foreign_key :tasks, :users, column: :user
-    #add_foreign_key :tasks, :categories, column: :category
+    # add_foreign_key :tasks, :users, column: :user
+    # add_foreign_key :tasks, :categories, column: :category
   end
 end
