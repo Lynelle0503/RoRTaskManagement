@@ -2,7 +2,7 @@
 <h4>Hello, <%=Current.session.user.name %> </h4>
 <p>Create a new task here</p>
 <p>OR</p>
-<p>See your registered tasks</p>
+<p><%= link_to "See your registered tasks", tasks_index_path %></p>
 <%# if Current.session %>
     <%= link_to "Sign out", Current.session, data: {turbo_method: :delete} %>
 <%# end %>

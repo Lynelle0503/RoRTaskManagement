@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  name: MyString
+  body: MyText
+  due: 2024-12-17 11:51:48
+  done: false
+  category: one
+
+two:
+  user: two
+  name: MyString
+  body: MyText
+  due: 2024-12-17 11:51:48
+  done: false
+  category: two

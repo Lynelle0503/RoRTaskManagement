@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_secure_password
   has_many :sessions, dependent: :destroy
+  has_many :tasks
+  has_many :categories
   # validations email address
   validates_presence_of :email_address
   validates_uniqueness_of :email_address

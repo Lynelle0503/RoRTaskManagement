@@ -1,2 +1,8 @@
 <h2> <%= Current.session.user.name %>'s Tasks (pluralize)</h2>
 <p>List of Tasks</p>
+<ul>
+    <% @tasks.each do |t| %>
+    <li><%= t.name %> - <%= t.category.name %></li>
+
+    <% end %>
+</ul>
