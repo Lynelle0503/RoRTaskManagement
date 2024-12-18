@@ -1,0 +1,8 @@
+<h4>Category <%= @tag.id %></h4>
+
+Name of Category - <%= @tag.name %>
+<br>
+Created by - <%= @tag.user.name %>
+<br>
+<br>
+<%= link_to "Edit Category", edit_category_path %>
