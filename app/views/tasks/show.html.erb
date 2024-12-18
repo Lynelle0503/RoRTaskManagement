@@ -1,0 +1,13 @@
+<h4>Details of Task - <%= @task.id %></h4>
+
+<ul>
+    Task Name - <%= @task.name %> <br>
+    Task Body - <%= @task.body %><br>
+    Task Due Date - <%= @task.due %><br>
+    Task Completed? - <%= @task.done %><br>
+    Task Category - <%= @task.category.name %><br>
+    Task Entered by - <%= @task.user.name %>
+</ul>
+
+<br>
+<%= link_to "Edit Task", edit_task_path %>

@@ -1,3 +1,7 @@
 <h1>LandingPages#show</h1>
 <p>Find me in app/views/landing_pages/show.html.erb</p>
-<%= link_to "Login with us", new_session_path %>
+<% if Current.session%>
+    <%= link_to "Go to the Home Page", home_path %>
+<% else %>
+    <%= link_to "Sign up with us !", home_path %>
+<% end %>

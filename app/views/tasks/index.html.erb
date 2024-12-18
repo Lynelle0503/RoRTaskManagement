@@ -2,7 +2,7 @@
 <p>List of Tasks</p>
 <ul>
     <% @tasks.each do |t| %>
-    <li><%= t.name %> - <%= t.category.name %></li>
+    <li><%= link_to t.name,t %> - <%= link_to(t.category.name,categories_path) %></li>
 
     <% end %>
 </ul>
